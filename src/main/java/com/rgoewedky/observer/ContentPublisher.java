@@ -26,8 +26,8 @@ public class ContentPublisher implements IContentPublisher {
     public void addSubscriber(IContentSubscriber iContentSubscriber) {
         ContentSubscriber contentSubscriber = (ContentSubscriber) iContentSubscriber;
         // TODO: Add subscriber if not added, else only log see below
-        // System.out.println(Event.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] subscribed [" + this.getName() + "]");
-        // System.out.println(Event.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] already subscribed [" + this.getName() + "]");
+        // System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] subscribed [" + this.getName() + "]");
+        // System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] already subscribed [" + this.getName() + "]");
     }
 
     /**
@@ -38,12 +38,12 @@ public class ContentPublisher implements IContentPublisher {
     public void removeSubscriber(IContentSubscriber iContentSubscriber) {
         ContentSubscriber contentSubscriber = (ContentSubscriber) iContentSubscriber;
         // TODO: Remove Subscriber
-        // System.out.println(Event.UNSUBSCRIBED + " | [" + contentSubscriber.getName() + "] unsubscribed [" + this.getName() + "]");
+        // System.out.println(EventEnum.UNSUBSCRIBED + " | [" + contentSubscriber.getName() + "] unsubscribed [" + this.getName() + "]");
     }
 
     @Override
     public void publish(String content) {
-        // System.out.println(Event.PUBLISHED + " | [" + this.publisherName + "] published [" + content + "]");
+        // System.out.println(EventEnum.PUBLISHED + " | [" + this.publisherName + "] published [" + content + "]");
         // TODO: Notify all subscribers about fresh content
     }
 

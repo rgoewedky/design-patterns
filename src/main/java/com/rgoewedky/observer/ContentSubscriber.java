@@ -18,7 +18,7 @@ public class ContentSubscriber implements IContentSubscriber {
      * @param newContent    content publisher published
      */
     public void update(String publisherName, String newContent) {
-        System.out.println(Event.NOTIFIED + " | " + "Hey, [" + this.subscriberName + "]! [" + publisherName + "] just published fresh content :- [" + newContent + "]");
+        System.out.println(EventEnum.NOTIFIED + " | " + "Hey, [" + this.subscriberName + "]! [" + publisherName + "] just published fresh content :- [" + newContent + "]");
     }
 
     /**
