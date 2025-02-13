@@ -13,9 +13,8 @@ public class FactoryRunner extends Runner {
     public void run() {
         Factory factory = new Factory();
         try {
-
             System.out.println(factory.getDocumentByType("word"));
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.err.println(e.getMessage());
         }
     }

@@ -30,27 +30,3 @@ public class Factory {
     }
 }
 
-class Document {
-    protected String type;
-}
-
-class PdfDocument extends Document {
-    PdfDocument() {
-        super();
-        this.type = "pdf";
-    }
-}
-
-class WordDocument extends Document {
-    WordDocument() {
-        super();
-        this.type = "word";
-    }
-}
-
-class ExcelDocument extends Document {
-    ExcelDocument() {
-        super();
-        this.type = "excel";
-    }
-}
