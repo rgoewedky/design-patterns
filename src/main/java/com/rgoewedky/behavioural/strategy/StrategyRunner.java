@@ -1,13 +1,16 @@
 package com.rgoewedky.strategy;
 
-public class StrategyRunner {
+import com.rgoewedky.Runner;
+
+public class StrategyRunner extends Runner {
+
+    private static final String name = "STRATEGY";
 
     public StrategyRunner() {
-        System.out.println("=======================");
-        System.out.println("Pattern: STRATEGY");
-        System.out.println("=======================");
+        super(name);
     }
 
+    @Override
     public void run() {
 
         /*

@@ -1,14 +1,16 @@
 package com.rgoewedky.observer;
 
-public class ObserverRunner {
+import com.rgoewedky.Runner;
+
+public class ObserverRunner extends Runner {
+
+    private static final String name = "OBSERVER";
 
     public ObserverRunner() {
-        System.out.println("=======================");
-        System.out.println("Pattern: OBSERVER");
-        System.out.println("=======================");
+        super(name);
     }
 
-
+    @Override
     public void run() {
         /*
         // marvel studio content publisher
