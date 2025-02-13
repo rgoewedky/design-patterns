@@ -1,4 +1,4 @@
-package com.rgoewedky.strategy;
+package com.rgoewedky.behavioural.strategy;
 
 public class DebitCardPaymentStrategy implements IPaymentStrategy {
     @Override

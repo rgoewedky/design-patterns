@@ -1,5 +1,9 @@
 package com.rgoewedky.observer;
 
+import com.rgoewedky.behavioural.observer.ContentPublisher;
+import com.rgoewedky.behavioural.observer.ContentSubscriber;
+import com.rgoewedky.behavioural.observer.IContentPublisher;
+import com.rgoewedky.behavioural.observer.IContentSubscriber;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

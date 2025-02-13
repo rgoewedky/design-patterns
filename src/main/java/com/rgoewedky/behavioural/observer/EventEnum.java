@@ -1,4 +1,4 @@
-package com.rgoewedky.observer;
+package com.rgoewedky.behavioural.observer;
 
 /**
  * Events enum

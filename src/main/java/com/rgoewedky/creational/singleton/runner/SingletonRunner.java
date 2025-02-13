@@ -1,12 +1,13 @@
-package com.rgoewedky.creational.singleton;
+package com.rgoewedky.creational.singleton.runner;
 
 import com.rgoewedky.Runner;
+import com.rgoewedky.creational.singleton.Singleton;
 
-public class SingletonRunner implements Runner {
+public class SingletonRunner extends Runner {
+    private static final String name = "SINGLETON";
+
     public SingletonRunner() {
-        System.out.println("=======================");
-        System.out.println("Pattern: Singleton");
-        System.out.println("=======================");
+        super(name);
     }
 
     @Override
@@ -15,27 +16,6 @@ public class SingletonRunner implements Runner {
         Singleton instance1 = Singleton.getInstance();
         Singleton instance2 = Singleton.getInstance();
 
-        System.out.println("Two instance are pointing to same object: "+instance1.equals(instance2));
-
-        // Singleton with multithreading
-        Runnable task = () -> {
-            Singleton instance = Singleton.getInstance();
-            System.out.println(Thread.currentThread().getName() + " - Instance HashCode: " + instance.hashCode());
-        };
-
-        Thread t1 = new Thread(task);
-        Thread t2 = new Thread(task);
-        Thread t3 = new Thread(task);
-        Thread t4 = new Thread(task);
-        Thread t5 = new Thread(task);
-        Thread t6 = new Thread(task);
-
-        t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
-        t5.start();
-        t6.start();
-
+        System.out.println("Two instance are pointing to same object: " + instance1.equals(instance2));
     }
 }
