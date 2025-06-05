@@ -9,3 +9,5 @@ Design Patterns the hard way.
 - Each pattern has problem statement which you need to implement.
 - You can find the problem statements under `resources` folder.
 
+Note: Implementation to these patterns can vary but core concept or idea remains same
+

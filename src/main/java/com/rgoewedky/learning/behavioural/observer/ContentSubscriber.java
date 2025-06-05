@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.observer;
+package com.rgoewedky.learning.behavioural.observer;
 
 /**
  * Concrete ContentSubscriber class
@@ -33,12 +33,12 @@ public class ContentSubscriber implements IContentSubscriber {
     @Override
     public void subscribe(IContentPublisher iContentPublisher) {
         ContentPublisher contentPublisher = (ContentPublisher) iContentPublisher;
-        // TODO: Subscribe to publisher
+        contentPublisher.addSubscriber(this);
     }
 
     @Override
     public void unsubscribe(IContentPublisher iContentPublisher) {
         ContentPublisher contentPublisher = (ContentPublisher) iContentPublisher;
-        // TODO: Unsubscribe to publisher
+        contentPublisher.removeSubscriber(this);
     }
 }

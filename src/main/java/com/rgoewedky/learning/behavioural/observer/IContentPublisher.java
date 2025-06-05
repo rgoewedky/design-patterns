@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.observer;
+package com.rgoewedky.learning.behavioural.observer;
 
 /**
  * ContentPublisher Interface

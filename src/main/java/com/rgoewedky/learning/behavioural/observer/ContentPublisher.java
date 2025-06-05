@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.observer;
+package com.rgoewedky.learning.behavioural.observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +25,13 @@ public class ContentPublisher implements IContentPublisher {
      */
     public void addSubscriber(IContentSubscriber iContentSubscriber) {
         ContentSubscriber contentSubscriber = (ContentSubscriber) iContentSubscriber;
-        // TODO: Add subscriber if not added, else only log see below
-        // System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] subscribed [" + this.getName() + "]");
-        // System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] already subscribed [" + this.getName() + "]");
+        if(!subscribers.contains(contentSubscriber)) {
+            subscribers.add(contentSubscriber);
+            System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] subscribed [" + this.getName() + "]");
+            return;
+        }
+
+        System.out.println(EventEnum.SUBSCRIBED + " | [" + contentSubscriber.getName() + "] already subscribed [" + this.getName() + "]");
     }
 
     /**
@@ -37,14 +41,15 @@ public class ContentPublisher implements IContentPublisher {
      */
     public void removeSubscriber(IContentSubscriber iContentSubscriber) {
         ContentSubscriber contentSubscriber = (ContentSubscriber) iContentSubscriber;
-        // TODO: Remove Subscriber
-        // System.out.println(EventEnum.UNSUBSCRIBED + " | [" + contentSubscriber.getName() + "] unsubscribed [" + this.getName() + "]");
+        subscribers.remove(contentSubscriber);
+        System.out.println(EventEnum.UNSUBSCRIBED + " | [" + contentSubscriber.getName() + "] unsubscribed [" + this.getName() + "]");
     }
 
     @Override
     public void publish(String content) {
-        // System.out.println(EventEnum.PUBLISHED + " | [" + this.publisherName + "] published [" + content + "]");
-        // TODO: Notify all subscribers about fresh content
+        System.out.println(EventEnum.PUBLISHED + " | [" + this.publisherName + "] published [" + content + "]");
+        System.out.println("COUNT | "+this.publisherName+" subscribers:  "+subscribers.size());
+        subscribers.forEach((subscriber)->((ContentSubscriber) subscriber).update(this.publisherName, content));
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.observer;
+package com.rgoewedky.learning.behavioural.observer;
 
 import com.rgoewedky.Runner;
 
@@ -12,7 +12,7 @@ public class ObserverRunner extends Runner {
 
     @Override
     public void run() {
-        /*
+
         // marvel studio content publisher
         IContentPublisher marvelContentPublisher = new ContentPublisher("Marvel Studio");
         // fox studio content publisher
@@ -46,6 +46,5 @@ public class ObserverRunner extends Runner {
 
         // fox studio publish content
         foxContentPublisher.publish("X-Men");
-        */
     }
 }
