@@ -1,4 +1,4 @@
-package com.rgoewedky.creational.singleton;
+package com.rgoewedky.learning.creational.singleton;
 
 public class Singleton {
 

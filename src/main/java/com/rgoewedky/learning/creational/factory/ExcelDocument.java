@@ -1,8 +1,8 @@
-package com.rgoewedky.creational.factory;
+package com.rgoewedky.learning.creational.factory;
 
 public class ExcelDocument extends Document {
     ExcelDocument() {
         super();
-        this.type = "excel";
+        this.type = "EXCEL";
     }
 }

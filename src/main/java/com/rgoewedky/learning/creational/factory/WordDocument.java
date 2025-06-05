@@ -1,8 +1,8 @@
-package com.rgoewedky.creational.factory;
+package com.rgoewedky.learning.creational.factory;
 
 public class WordDocument extends Document {
     WordDocument() {
         super();
-        this.type = "word";
+        this.type = "WORD";
     }
 }

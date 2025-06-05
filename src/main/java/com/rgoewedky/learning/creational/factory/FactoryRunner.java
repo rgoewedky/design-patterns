@@ -1,4 +1,4 @@
-package com.rgoewedky.creational.factory;
+package com.rgoewedky.learning.creational.factory;
 
 import com.rgoewedky.Runner;
 
@@ -13,7 +13,8 @@ public class FactoryRunner extends Runner {
     public void run() {
         Factory factory = new Factory();
         try {
-            System.out.println(factory.getDocumentByType("word"));
+            Document document = factory.getDocumentByType("pdf");
+            System.out.println("Document is of Type: "+ document.type);
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }

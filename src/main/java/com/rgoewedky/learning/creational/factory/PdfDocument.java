@@ -1,8 +1,8 @@
-package com.rgoewedky.creational.factory;
+package com.rgoewedky.learning.creational.factory;
 
 public class PdfDocument extends Document {
     PdfDocument() {
         super();
-        this.type = "pdf";
+        this.type = "PDF";
     }
 }

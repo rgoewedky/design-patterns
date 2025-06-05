@@ -1,7 +1,7 @@
-package com.rgoewedky.creational.singleton.runner;
+package com.rgoewedky.learning.creational.singleton.runner;
 
 import com.rgoewedky.Runner;
-import com.rgoewedky.creational.singleton.MultiThreadSingleton;
+import com.rgoewedky.learning.creational.singleton.MultiThreadSingleton;
 
 public class MultiThreadSingletonRunner extends Runner {
     private static final String name = "MULTI_THREAD_SINGLETON";

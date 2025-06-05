@@ -1,7 +1,7 @@
-package com.rgoewedky.creational.singleton.runner;
+package com.rgoewedky.learning.creational.singleton.runner;
 
 import com.rgoewedky.Runner;
-import com.rgoewedky.creational.singleton.Singleton;
+import com.rgoewedky.learning.creational.singleton.Singleton;
 
 public class SingletonRunner extends Runner {
     private static final String name = "SINGLETON";

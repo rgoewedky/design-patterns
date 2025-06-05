@@ -1,4 +1,4 @@
-package com.rgoewedky.creational.factory;
+package com.rgoewedky.learning.creational.factory;
 
 import java.util.HashMap;
 import java.util.Map;
