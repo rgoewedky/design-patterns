@@ -1,14 +1,14 @@
-package com.rgoewedky.behavioural.strategy;
+package com.rgoewedky.learning.behavioural.strategy;
 
-public class Payment {
+public class Cart {
 
     private IPaymentStrategy paymentStrategy;
 
-    public Payment() {
+    public Cart() {
 
     }
 
-    public Payment(IPaymentStrategy paymentStrategy) {
+    public Cart(IPaymentStrategy paymentStrategy) {
         this.paymentStrategy = paymentStrategy;
     }
 

@@ -1,5 +1,9 @@
-package com.rgoewedky.behavioural.strategy;
+package com.rgoewedky.learning.behavioural.strategy;
 
-public class CredPaymentStrategy {
-    // TODO: Implement payment strategy
+public class CredPaymentStrategy implements IPaymentStrategy {
+
+    @Override
+    public void pay(int amount) {
+        System.out.println("Paying amount " + amount + " using " + PaymentStrategyEnum.CRED);
+    }
 }

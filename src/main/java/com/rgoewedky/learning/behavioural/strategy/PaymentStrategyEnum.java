@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.strategy;
+package com.rgoewedky.learning.behavioural.strategy;
 
 public enum PaymentStrategyEnum {
     DEBIT_CARD,

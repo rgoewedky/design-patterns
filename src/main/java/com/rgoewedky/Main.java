@@ -1,6 +1,6 @@
 package com.rgoewedky;
 
-import com.rgoewedky.behavioural.strategy.StrategyRunner;
+import com.rgoewedky.learning.behavioural.strategy.StrategyRunner;
 
 public class Main {
     public static void main(String[] args) {

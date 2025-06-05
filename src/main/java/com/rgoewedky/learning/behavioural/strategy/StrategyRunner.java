@@ -1,4 +1,4 @@
-package com.rgoewedky.behavioural.strategy;
+package com.rgoewedky.learning.behavioural.strategy;
 
 import com.rgoewedky.Runner;
 
@@ -13,27 +13,24 @@ public class StrategyRunner extends Runner {
     @Override
     public void run() {
 
-        /*
-        Payment payment = new Payment();
+        Cart cart = new Cart();
 
         // set credit card payment strategy
-        payment.setPaymentStrategy(new CreditCardPaymentStrategy());
+        cart.setPaymentStrategy(new CreditCardPaymentStrategy());
 
         // do the payment
-        payment.pay(100);
+        cart.pay(100);
 
-        payment.setPaymentStrategy(new GPayPaymentStrategy());
+        cart.setPaymentStrategy(new GPayPaymentStrategy());
 
-        payment.pay(120);
+        cart.pay(120);
 
-        payment.setPaymentStrategy(new PhonePePaymentStrategy());
+        cart.setPaymentStrategy(new PhonePePaymentStrategy());
 
-        payment.pay(130); // should print `Paying amount 130 using PHONEPE`
+        cart.pay(130); // should print `Paying amount 130 using PHONEPE`
 
-        payment.setPaymentStrategy(new CredPaymentStrategy());
+        cart.setPaymentStrategy(new CredPaymentStrategy());
 
-        payment.pay(150); // should print `Paying amount 150 using CRED`
-
-         */
+        cart.pay(150); // should print `Paying amount 150 using CRED`
     }
 }
